@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+  <!-- Font GG  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <!-- FONT AWESOME  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- BOOSTRAP CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- link CDN ANAIMATE.STYLE  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- OWL CAROUSEL CSS  -->
+  <link rel="stylesheet" href="./Css/owl.carousel.min.css">
+  <link rel="stylesheet" href="./Css/owl.theme.default.min.css">
+  <!-- VENOBOX CSS  -->
+  <link rel="stylesheet" href="./Css/venobox.min.css" type="text/css" media="screen">
+  <!-- link CSS  -->
+  <link rel="stylesheet" href="./Css/index.css">
+</head>
+
+<body>
+  <!-- HEADER  -->
+
+  <header class="container-fluid ">
+    <nav class="navbar navbar-expand-md ">
+      <div class="container-md">
+        <a class="navbar-brand" href="#">
+          <img src="./img/lan3.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Phim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Danh sách của tôi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tìm theo ngôn ngữ
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item line" href="#">Tiếng Việt</a></li>
+                <li><a class="dropdown-item line" href="#">Tiếng Anh</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Khác </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mới & Phổ biến</a>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <header id="headerFixed" class="container-fluid">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-md">
+        <a class="navbar-brand" href="#">
+          <img src="./img/lan3.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+            <i class="fa fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Phim</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Danh sách của tôi</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tìm theo ngôn ngữ
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item line" href="#">Tiếng Việt</a></li>
+                <li><a class="dropdown-item line" href="#">Tiếng Anh</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Khác </a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mới & Phổ biến</a>
+            </li>
+
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CAROUSEL  -->
+  <section class="movieCarousel">
+
+    <div id="carouselMovie" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./img/AAAABZfeynjB_4ZXumaUnPKM2AhAN7qRJVw_HO8uIfoqAjaUFewZKpKDUP7Y__Kp65Xr2GNClWrAzJ-bA7duMkZy6qvTVubXktRO0VnU.webp"
+            class="d-block w-100" alt="...">
+          <div class="movieCarousel__overlayy">
+
+          </div>
+          <div class="movieCarousel__overlayyyy"></div>
+
+          <div class="carousel-caption ">
+            <div class="col-9">
+              <p class="animate__animated animate__fadeInDown">Thể loại : Chương trình giả tưởng </p>
+              <p class="animate__animated animate__fadeInDown">Vào ngày Maya đăng quang, một vị khách không mời từ âm
+                gian
+                xuất hiện cùng tin tức chấn động về nguồn gốc của cô – sau đó đưa
+                ra một tối hậu thư..</p>
+              <div class="movieCarousel__trailer">
+                <span class="animate__animated animate__fadeInUp"> <i class="fa fa-play "></i> Phát </span>
+                <button class="animate__animated animate__fadeInUp"> <i class="fa-solid fa-info"></i> Thông tin
+                  khác</button>
+                <h3 class="active">Top 10 phim tại Việt Nam hôm nay </h3>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item imgbg__two ">
+          <img
+            src="./img/AAAABTVdnFnEguNWOXEo0N43xbBev4ZP5y8JZgjNRy8CLIDeCRb10q0Em81nDMouZIwOv05OACAmg_rp2CC0GJtsu1AiEoIzX-dY3v4I.webp"
+            class="d-block w-100" alt="...">
+          <div class="movieCarousel__overlayy">
+          </div>
+          <div class="movieCarousel__overlayyyy"></div>
+          <div class="carousel-caption ">
+            <div class="col-9">
+              <p class="animate__animated animate__fadeInDown">Thể loại : Chương trình truyền hình
+                cho trẻ em </p>
+              <p class="animate__animated animate__fadeInDown">Giờ chơi với Piya rất bừa bộn. Oggy dạy Piya cách tận
+                hưởng thế
+                giới ngoài trời. Piya và những chú gián vẫn muốn chơi, nhưng Oggy
+                cần ngủ.</p>
+              <div class="movieCarousel__trailer">
+                <span class="animate__animated animate__fadeInUp"> <i class="fa fa-play"></i> Phát </span>
+                <button class="animate__animated animate__fadeInUp"> <i class="fa-solid fa-info"></i> Thông tin
+                  khác</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="carousel-item imgbg__three">
+          <img
+            src="./img/AAAABU9XC6E0wzwDw4LpRv6dFVc-1pj-LNELu8XG0wwEFYScqWc9yvuYj4KrHauQNsP6fhYkR0NI00ytlbdJmxMbIcQG8qWnEdk9pZ7A.webp"
+            class="d-block w-100" alt="...">
+          <div class="movieCarousel__overlayy">
+          </div>
+          <div class="movieCarousel__overlayyyy"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <div class="col-9">
+              <p class="animate__animated animate__fadeInDown">Thể loại : Phim trẻ em & gia đình </p>
+              <p class="animate__animated animate__fadeInDown">Junior và đám bạn cò hiện tại chỉ giao hàng, nhưng họ sẽ
+                phải có
+                một ngoại lệ khi một yêu cầu giao em bé rất đặc biệt được đưa
+                đến.</p>
+              <div class="movieCarousel__trailer">
+                <span class="animate__animated animate__fadeInUp"> <i class="fa fa-play"></i> Phát </span>
+                <button class="animate__animated animate__fadeInUp"> <i class="fa-solid fa-info"></i> Thông tin
+                  khác</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- NEWIN  -->
+  <span>
+    <section class="newIn ">
+      <div class="newIn__caption">
+        <h3>Mới Phát hành</h3>
+      </div>
+      <div class="newIn__content1">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="./img/111.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+
+          <div class="item"><img src="./img/222222.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/3.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/4.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/5.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/6.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/7.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/8.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a
+                href="https://www.netflix.com/watch/81377090?trackId=255824129&tctx=0%2C3%2CNAPA%40%40%7C68b855f2-90b1-4f28-afba-5d29a54551f3-12876238_titles%2F1%2F%2Foggy%2F0%2F0%2CNAPA%40%40%7C68b855f2-90b1-4f28-afba-5d29a54551f3-12876238_titles%2F1%2F%2Foggy%2F0%2F0%2Cunknown%2C%2C68b855f2-90b1-4f28-afba-5d29a54551f3-12876238%7C1%2CtitlesResults%2C%2CVideo%3A70286809%2CdetailsPagePlayButton"><i
+                  class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/9.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/10.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/11.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/12.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="newIn__content2">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="./img/1333.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/14.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/15.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/16.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/17.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/18.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/19.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/movie-20.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/21.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/22x2.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/23.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+          <div class="item"><img src="./img/24.png" alt="">
+            <div class="newIn__overlayy">
+            </div>
+            <div class="newIn__play">
+              <a href="#"><i class="fa fa-play"></i></a>
+
+              <a href="#">Xem ngay</a>
+              <h4>1h 30p</h4>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+    </section>
+  </span>
+  <!-- SHOWTIME  -->
+  <section class="showTimes  ">
+    <h2>
+      Ra mắt tuần này
+    </h2>
+    <div class="container">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button"
+            role="tab" aria-controls="home" aria-selected="true"> <span>
+              MON
+            </span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button" role="tab"
+            aria-controls="profile" aria-selected="false"><span>
+              TUE</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button" role="tab"
+            aria-controls="contact" aria-selected="false"><span>
+              WED</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab"
+            aria-controls="contact" aria-selected="false"><span>
+              THU</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab"
+            aria-controls="contact" aria-selected="false"><span>
+              FRI</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab"
+            aria-controls="contact" aria-selected="false"><span>
+              SAT</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link line" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab"
+            aria-controls="contact" aria-selected="false"><span>
+              SUN</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="mon" role="tabpanel" aria-labelledby="home-tab">
+          <div class="row py-4 showTimes__row">
+            <div class="col-3 ">
+              <img class="img-fluid" src="./img/Mon1.png" alt="">
+            </div>
+            <div class="col-9 ">
+              <p>Thể loại : Chương trình cho trẻ em</p>
+              <h3>Giới thiệu : PoKéMon </h3>
+              <p>Ash và Pikachu cùng mẹ cậu đến vùng Alola và ghi danh vào học
+                trường Pokémon. Tại đó, họ đối đầu với Đội Skull hung ác.</p>
+              <p>
+                <a href="#">Xem ngay <i class="fa fa-angle-right"></i></a>
+              </p>
+              <div class="row">
+                <div class="col-9 d-flex align-items-center">
+                  <span class="sp__col9">Tập mặt trời & mặt trăng : <i class="fa fa-clock"></i> 1h30p </span>
+                </div>
+                <div class="col-3"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row py-4 showTimes__row">
+            <div class="col-3 ">
+              <img class="img-fluid" src="./img/Mon2.png" alt="">
+            </div>
+            <div class="col-9 ">
+              <p>Thể loại : Chương trình cho trẻ em</p>
+              <h3>Giới thiệu : Dragon Quest </h3>
+              <p>Cậu bé Dai trẻ tuổi dấn thân vào hành trình gian khổ để trở thành
+                dũng sĩ huyền thoại, khổ luyện bên những người đồng đội chí cốt
+                để cứu thế giới khỏi Ma Vương hồi sinh.</p>
+              <p>
+                <a href="#">Xem ngay <i class="fa fa-angle-right"></i></a>
+              </p>
+              <div class="row">
+                <div class="col-9 d-flex align-items-center">
+                  <span class="sp__col9">Tập chuyến phiêu lưu của DAI : <i class="fa fa-clock"></i> 52p </span>
+                </div>
+                <div class="col-3"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tue" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row py-4 showTimes__row">
+            <div class="col-3 ">
+              <img class="img-fluid" src="./img/Tue1.png" alt="">
+            </div>
+            <div class="col-9 ">
+              <p>Thể loại : Phim truyền hình chính kịch Việt Nam </p>
+              <h3>Giới thiệu : BỐ GIÀ </h3>
+              <p>Ông bố cộc cằn làm nghề chạy xe ôm luôn cố gắng chăm lo cho vợ
+                và hai đứa con, nhưng ba người họ lúc nào cũng khiến ông bất
+                ngờ.</p>
+              <p>
+                <a href="#">Xem ngay <i class="fa fa-angle-right"></i></a>
+              </p>
+              <div class="row">
+                <div class="col-9 d-flex align-items-center">
+                  <span class="sp__col9">Tập 1 : <i class="fa fa-clock"></i> 44p </span>
+                </div>
+                <div class="col-3"></div>
+              </div>
+
+            </div>
+          </div>
+          <div class="row py-4 showTimes__row">
+            <div class="col-3 ">
+              <img class="img-fluid" src="./img/Tue2.png" alt="">
+            </div>
+            <div class="col-9 ">
+              <p>Thể loại : Phim khoa học viễn tưởng </p>
+              <h3>Giới thiệu : VENOM </h3>
+              <p>Khi Eddie Brock và Venom cố gắng xoay xở với mối quan hệ chông
+                gai của họ, mối đe dọa mới xuất hiện từ sát nhân hàng loạt Cletus
+                Kasady và symbiote ngoài hành tinh mới.</p>
+              <p>
+                <a href="#">Xem ngay <i class="fa fa-angle-right"></i></a>
+              </p>
+              <div class="row">
+                <div class="col-9 d-flex align-items-center">
+                  <span class="sp__col9">Tập đối mặt tử thù : <i class="fa fa-clock"></i> 97p </span>
+                </div>
+                <div class="col-3"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="wed" role="tabpanel" aria-labelledby="contact-tab">WED</div>
+        <div class="tab-pane fade" id="thu" role="tabpanel" aria-labelledby="contact-tab">THU</div>
+        <div class="tab-pane fade" id="fri" role="tabpanel" aria-labelledby="contact-tab">FRI</div>
+        <div class="tab-pane fade" id="sat" role="tabpanel" aria-labelledby="contact-tab">SAT</div>
+        <div class="tab-pane fade" id="sun" role="tabpanel" aria-labelledby="contact-tab">SUN</div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- COMMING SOON  -->
+  <section class="commingSoon section">
+    <div class="container">
+      <h2>
+        Sắp phát hành
+      </h2>
+      <div class="row align-items-center commingSoon__row">
+        <div class="col-6">
+          <p>Thể loại : Indonesia , phim kinh dị </p> </p>
+          <h3>QUORIN </h3>
+          <div class="commingSoon__star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+
+            <span><i class="fa fa-calendar"></i>
+              13/4/2023 </span>
+          </div>
+          <p>Ra mắt vào Thứ Năm :
+            Cuộc sống ở một trường nội trú rơi vào hỗn loạn khi một giáo viên
+            hướng dẫn các học sinh thực hiện nghi lễ bị cấm để triệu hồi song
+            trùng của họ.</p>
+            <a href="#">Xem thông tin <i class="fa fa-angle-right"></i> </a>
+        </div>
+        <div class="col-6">
+          <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="https://www.youtube.com/watch?v=2Vv-BfVoq4g">
+            <div class="commingSoon__video ">
+              <img src="./img/slide-3-video.png" alt="">
+              <i class="fa fa-play"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- MOVIE LIST  -->
+  <section class="movieList section">
+    <div class="container">
+      <h3>Danh sách phim xem nhiều nhất </h3>
+      <div class="row">
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-9.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-11.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-13.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-12.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="movieList__item">
+            <img class="img-fluid" src="./img/movie-14.jpg" alt="">
+            <div class="movieList__overlay"></div>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </section>
+  <!-- CONTACT  -->
+  <section class="contact section">
+    <div class="contact__content">
+      <p>Need help ? Contact our support team on .</p>
+      <p><a href="tel:0868484572"><i class="fa fa-phone"></i> 0868 484 572</a></p>
+    </div>
+  </section>
+  <!-- FOOTER  -->
+  <footer class="section">
+    <div class="container">
+      <div class="icon__contact">
+       <a href="https://www.facebook.com/profile.php?id=100022419585028"> <i class="fab fa-facebook-f"></i></a>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+      <div class="row footer__row">
+        <div class="col-3">
+          <ul>
+            <li><a href="#">Mô tả âm thanh</a>  </li>
+            <li>Quan hệ nhà đầu tư </li>
+            <li>thông báo pháp lý </li>
+          </ul>
+
+        </div>
+        <div class="col-3">
+          <ul>
+            <li>Trung tâm trợ giúp </li>
+            <li>Việc làm </li>
+            <li>Tuỳ chọn Cookie</li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li>Thẻ quà tâng</li>
+            <li>Điều khoản sử dụng</li>
+            <li>Thông tin doanh nghiệp </li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <ul>
+            <li>Trung tâm đa phương tiện</li>
+            <li>Quyền riêng tư </li>
+            <li>Liên hệ với chúng tôi</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2004-2023 DANGKHOA ,lnc</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- JQUERY  -->
+  <script src="./js/jquery.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <!-- giúp chạy các thư viện BS , Owcarousel ...  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- OWL CAROUSEL  -->
+  <script src="./js/owl.carousel.min.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      stagePadding: 50,
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+  <!-- VENOBOX JS  -->
+  <script  src="venobox/venobox.min.js"></script>
+  <script>
+    new VenoBox();
+  </script>
+  
+
+  <!-- MAIN JS  -->
+  <script>
+    // xảy ra khi trượt 
+    window.onscroll = function () {
+      //tạo hiệu ứng xuất hiện header đen khi trượt 
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        // transform: translateY(0);
+        document.getElementById("headerFixed").style.transform = "translateY(0)";
+        document.getElementById("headerFixed").style.opacity = "1.3";
+      } else {
+        document.getElementById("headerFixed").style.transform = "translateY(-100%)";
+        document.getElementById("headerFixed").style.opacity = "0";
+
+      }
+    }
+
+  </script>
+</body>
+
+</html>
